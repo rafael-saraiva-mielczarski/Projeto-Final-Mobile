@@ -13,17 +13,19 @@
     <string name="btn_moedas">Analisar as Moedas</string>
     <string name="btn_trending">Ver Moedas em alta</string>
     <string name="btn_tracker">Adicionar moedas para acompanhar</string>
-    <string name="btn_search_comments">Buscar Comments</string>
-    <string name="btn_search_todos">Buscar ToDos</string>
     <string name="btn_view_https">Visualizar os Requests</string>
     <string name="user">Usuário</string>
     <string name="name">Nome</string>
     <string name="email">E-Mail</string>
-    <string name="btn_search_users">Buscar Usuários</string>
+    <string name="btn_search_coins">Ver Moedas</string>
     <string name="btn_user_details">Detalhes</string>
-    <string name="userTv">Usuário: </string>
+    <string name="simboloTv">Simbolo: </string>
     <string name="nameTv">Nome: </string>
-    <string name="emailTv">Email: </string>
-    <string name="idTv">Id: </string>
-    <string name="addressTv">Localização: </string>
+    <string name="precoTv">Preço: </string>
+    <string name="athTv">All time high: </string>
+    <string name="atlTv">All time low: </string>
+    <string name="coinName">Nome</string>
+    <string name="coinSymbol">Simbolo</string>
+    <string name="coinPrice">Preço</string>
+    <string name="coinMktCap">Mkt Cap</string>
 </resources>
