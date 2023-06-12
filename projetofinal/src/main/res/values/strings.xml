@@ -22,8 +22,13 @@
     <string name="simboloTv">Simbolo: </string>
     <string name="nameTv">Nome: </string>
     <string name="precoTv">Preço: </string>
-    <string name="athTv">All time high: </string>
-    <string name="atlTv">All time low: </string>
+    <string name="altPrecoTv">Alteração de Preço 24h: </string>
+    <string name="athTv">Preço mais alto: </string>
+    <string name="atlTv">Preço mais baixo: </string>
+    <string name="mktCapTv">Market Cap Posição: </string>
+    <string name="mktCapValueTv">Market Cap: </string>
+    <string name="TFhighTv">Preço mais alto 24h: </string>
+    <string name="TFlowTv">Preço mais baixo 24h: </string>
     <string name="coinName">Nome</string>
     <string name="coinSymbol">Simbolo</string>
     <string name="coinPrice">Preço</string>

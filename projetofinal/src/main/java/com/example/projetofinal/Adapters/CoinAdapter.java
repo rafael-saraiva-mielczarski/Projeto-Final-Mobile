@@ -41,7 +41,14 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.ViewHolder>{
             intent.putExtra("Name",((Coin) view.getTag()).getName());
             intent.putExtra("Image",((Coin) view.getTag()).getImage());
             intent.putExtra("Symbol",((Coin) view.getTag()).getSymbol());
-            intent.putExtra("Id",((Coin) view.getTag()).getId());
+            intent.putExtra("Mkt Cap Rank",((Coin) view.getTag()).getMarket_cap_rank());
+            intent.putExtra("Price",((Coin) view.getTag()).getCurrent_price());
+            intent.putExtra("ATL",((Coin) view.getTag()).getAtl());
+            intent.putExtra("ATH",((Coin) view.getTag()).getAth());
+            intent.putExtra("Price Change 24h",((Coin) view.getTag()).getPrice_change_24h());
+            intent.putExtra("Mkt Cap",((Coin) view.getTag()).getMarket_cap());
+            intent.putExtra("High 24h",((Coin) view.getTag()).getHigh_24h());
+            intent.putExtra("Low 24h",((Coin) view.getTag()).getLow_24h());
             view.getContext().startActivity(intent);
         });
         return new ViewHolder(view);

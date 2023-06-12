@@ -34,7 +34,7 @@ public class CoinsRVActivity extends AppCompatActivity implements CoinPresenterC
 
         buttonBack = findViewById(R.id.back);
         buttonBack.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
             startActivity(intent);
         });
 

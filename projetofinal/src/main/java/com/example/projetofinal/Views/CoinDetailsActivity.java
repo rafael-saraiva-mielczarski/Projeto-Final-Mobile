@@ -3,18 +3,22 @@ package com.example.projetofinal.Views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projetofinal.R;
+import com.squareup.picasso.Picasso;
 
 public class CoinDetailsActivity extends AppCompatActivity {
 
-    TextView nameTv, symbolTv, imageTv, priceTv, mkt_capTv, high24hTv, low24hTv, price_change24hTv, totalSupplyTv, athTv, atlTv;
+    TextView nameTv, symbolTv, mkt_capValueTv, priceTv, mkt_capTv, high24hTv, low24hTv, price_change24hTv, totalSupplyTv, athTv, atlTv;
     String name, symbol;
 
-    Integer image, price, mkt_cap, high24h, low24h, price_change24h, totalSupply, ath, atl;
+    Integer price, mkt_cap, mkt_capValue, high24h, low24h, price_change24h, totalSupply, ath, atl;
+
+    ImageView imageView;
     Button btnBack;
 
     @Override
@@ -28,23 +32,40 @@ public class CoinDetailsActivity extends AppCompatActivity {
         });
 
 
-//        nameTv = findViewById(R.id.user_name);
-//        symbolTv = findViewById(R.id.user_username);
-//        imageTv = findViewById(R.id.user_email);
-//        priceTv = findViewById(R.id.user_id);
-//        mkt_capTv = findViewById(R.id.user_address);
-//
-//        Intent intent = getIntent();
-//        name = intent.getExtras().getString("Name");
-//        username = intent.getExtras().getString("Username");
-//        email = intent.getExtras().getString("Email");
-//        id = intent.getExtras().getInt("Id");
-//        address = intent.getExtras().getString("Address");
-//
-//        nameTv.setText(name);
-//        usernameTv.setText(username);
-//        emailTv.setText(email);
-//        idTv.setText(id.toString());
-//        addressTv.setText(address);
+        nameTv = findViewById(R.id.coinName);
+        symbolTv = findViewById(R.id.simbolo);
+        imageView = findViewById(R.id.imageView);
+        priceTv = findViewById(R.id.preco);
+        mkt_capTv = findViewById(R.id.mktCap);
+        mkt_capValueTv = findViewById(R.id.mktValueCap);
+        atlTv = findViewById(R.id.atl);
+        athTv = findViewById(R.id.ath);
+        high24hTv = findViewById(R.id.tfHigh);
+        low24hTv = findViewById(R.id.tfLow);
+        price_change24hTv = findViewById(R.id.altPrecoTv);
+
+        Intent intent = getIntent();
+        name = intent.getExtras().getString("Name");
+        symbol = intent.getExtras().getString("Symbol");
+        price = intent.getExtras().getInt("Price");
+        mkt_cap = intent.getExtras().getInt("Mkt Cap Rank");
+        mkt_capValue = intent.getExtras().getInt("Mkt Cap");
+        ath = intent.getExtras().getInt("ATH");
+        atl = intent.getExtras().getInt("ATl");
+        high24h = intent.getExtras().getInt("High 24h");
+        low24h = intent.getExtras().getInt("Low 24h");
+        price_change24h = intent.getExtras().getInt("Price Change 24h");
+        Picasso.get().load(intent.getExtras().getString("Image")).into(imageView);
+
+        nameTv.setText(name);
+        symbolTv.setText(symbol);
+        mkt_capTv.setText(mkt_cap.toString());
+        priceTv.setText(price.toString()+" R$");
+        mkt_capValueTv.setText(mkt_capValue.toString()+" R$");
+        athTv.setText(ath.toString()+" R$");
+        atlTv.setText(atl.toString()+" R$");
+        high24hTv.setText(high24h.toString()+" R$");
+        low24hTv.setText(low24h.toString()+" R$");
+        price_change24hTv.setText(price_change24h.toString()+" R$");
     }
 }

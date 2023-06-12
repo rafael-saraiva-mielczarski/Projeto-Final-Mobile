@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoFinalMobile">
         <activity
+            android:name=".Views.CoinDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.CoinsRVActivity"
             android:exported="false" />
         <activity
