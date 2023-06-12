@@ -14,6 +14,9 @@
             android:name=".Views.CoinDetailsActivity"
             android:exported="false" />
         <activity
+            android:name=".Views.CoinTrackerActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.CoinsRVActivity"
             android:exported="false" />
         <activity
